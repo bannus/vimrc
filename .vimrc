@@ -1,8 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" The Best vimrc Ever
-" Tommy MacWilliam <tmacwilliam@cs.harvard.edu>
-"
-" Be sure to read the README!
+" Bannus's vimrc
+" 
+" Adapted from tmacwill/vimrc
 "
 " Shortcuts:
 "   ; maps to :
@@ -51,6 +50,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'felixr/vim-multiedit'
 
 " syntax files
 Bundle 'pangloss/vim-javascript'
