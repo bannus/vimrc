@@ -1,4 +1,4 @@
-The Best .vimrc Ever (tm)
+Bannus's vimrc
 ---
 
 ## Installation:
