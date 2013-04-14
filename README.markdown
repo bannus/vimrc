@@ -22,7 +22,7 @@ Other available (awesome) colorschemes:
 ## Shortcuts
 
 * `;` maps to `:`
-* `,a`: Ack from the current directory
+* `,m`: Disable mouse editing/line numbers for copy paste
 * `,c<space>`: Toggle comments
 * `,e`: Open file in new tab
 * `,l`: Toggle NERDTree

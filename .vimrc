@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bannus's vimrc
-" 
+"
 " Adapted from tmacwill/vimrc
 "
 " Shortcuts:
@@ -43,17 +43,20 @@ Bundle 'hukl/Smyck-Color-Scheme'
 Bundle 'vim-scripts/wombat256.vim'
 
 " plugins
-Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'felixr/vim-multiedit'
 Bundle 'vim-scripts/trailing-whitespace'
+Bundle 'valloric/YouCompleteMe'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'rson/vim-conque'
+Bundle 'rbowden91/ocaml-vim'
 
 " syntax files
 Bundle 'pangloss/vim-javascript'
@@ -145,7 +148,6 @@ map <C-l> <C-W>l
 
 " shortcuts to common commands
 let mapleader = ","
-nnoremap <leader>a :Ack
 nnoremap <leader>e :tabnew<CR>:CtrlP<CR>
 nnoremap <leader>h :tabnew<CR>:ConqueTerm bash<CR>
 nnoremap <leader>l :NERDTreeToggle<CR>
