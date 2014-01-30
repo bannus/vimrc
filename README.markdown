@@ -35,5 +35,3 @@ Other available (awesome) colorschemes:
 * `,w`: Close tab
 * `kj`: Switch to normal mode and save
 * `Ctrl+{h,j,k,l}`: Move among windows
-
-🏩
