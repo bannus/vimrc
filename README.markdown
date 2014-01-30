@@ -4,7 +4,7 @@ Bannus's vimrc
 ## Installation:
 
     mkdir ~/.vim
-    git clone git://github.com/tmacwill/vimrc.git ~/.vim
+    git clone git://github.com/bannus/vimrc.git ~/.vim
     ln -s ~/.vim/.vimrc ~/.vimrc
     vim +BundleInstall +qall
 
