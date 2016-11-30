@@ -5,8 +5,11 @@ Bannus's vimrc
 
     mkdir ~/.vim
     git clone git://github.com/bannus/vimrc.git ~/.vim
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     ln -s ~/.vim/.vimrc ~/.vimrc
     vim +BundleInstall +qall
+
+On Windows, use ~/vimfiles instead of ~/.vim and ~/\_vimrc instead of ~/.vimrc.
 
 ## Color Schemes
 
@@ -15,7 +18,7 @@ The default color scheme is [Smyck](https://github.com/hukl/Smyck-Color-Scheme/)
 Other available (awesome) colorschemes:
 
 * jellybeans
-* skittles_dark
+* skittles\_dark
 * molokai
 * wombat256mod
 

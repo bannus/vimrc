@@ -28,37 +28,38 @@ set nocompatible
 
 " vundle
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
 " plugins
-Bundle 'tomtom/checksyntax_vim'
+Plugin 'tomtom/checksyntax_vim'
 
 " color schemes
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'tomasr/molokai'
-Bundle 'vim-scripts/Skittles-Dark'
-Bundle 'hukl/Smyck-Color-Scheme'
-Bundle 'vim-scripts/wombat256.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'tomasr/molokai'
+Plugin 'vim-scripts/Skittles-Dark'
+Plugin 'hukl/Smyck-Color-Scheme'
+Plugin 'vim-scripts/wombat256.vim'
 
 " plugins
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'felixr/vim-multiedit'
-Bundle 'vim-scripts/trailing-whitespace'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'rbowden91/ocaml-vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'felixr/vim-multiedit'
+Plugin 'vim-scripts/trailing-whitespace'
+Plugin 'terryma/vim-multiple-cursors'
 
 " syntax files
-Bundle 'pangloss/vim-javascript'
-Bundle 'tpope/vim-markdown'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-markdown'
+
+call vundle#end()
 
 " checksyntax config
 let g:checksyntax#auto_mode = 0
@@ -67,12 +68,11 @@ let g:checksyntax#auto_mode = 0
 let g:indent_guides_guide_size = 1
 
 " ctrlp config
-let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_working_path_mode = 'ra'
 
 " syntax highlighting and auto-indentation
 syntax on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 :inoremap # X<C-H>#
 set ai
 set si
@@ -115,7 +115,7 @@ endif
 set background=dark
 set t_Co=256
 colorscheme smyck
-set gfn=Inconsolata:h14
+set gfn=Inconsolata:h14,Consolas:h11
 
 " keep at least 5 lines below the cursor
 set scrolloff=5
@@ -177,3 +177,8 @@ function! ToggleMouse()
     endif
 endfunction
 nnoremap <leader>m :call ToggleMouse()<CR>
+
+" relative line numbers
+set number
+set relativenumber
+
