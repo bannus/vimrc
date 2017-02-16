@@ -69,6 +69,8 @@ let g:indent_guides_guide_size = 1
 
 " ctrlp config
 let g:ctrlp_working_path_mode = 'ra'
+" ignore files in .gitignore
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " syntax highlighting and auto-indentation
 syntax on
@@ -162,7 +164,9 @@ nnoremap ; :
 " also autosave when going to insert mode
 inoremap kj <Esc>:w<CR>
 
-" more logical vertical navigation
+" more logical vertical navigation. disable if moving by a count
+" noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+" noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap <silent> k gk
 nnoremap <silent> j gj
 
