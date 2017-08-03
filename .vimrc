@@ -54,6 +54,8 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'felixr/vim-multiedit'
 Plugin 'vim-scripts/trailing-whitespace'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'PProvost/vim-ps1'
+Plugin 'henrik/vim-indexed-search'
 
 " syntax files
 Plugin 'pangloss/vim-javascript'
