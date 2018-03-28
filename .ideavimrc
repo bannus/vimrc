@@ -1,0 +1,8 @@
+source ~/.dotfiles/vim/.vimrc
+
+" IntelliJ specific tab motions
+nnoremap <S-tab> :action VimMotionPreviousTab<CR>
+nnoremap <tab> :action VimMotionNextTab<CR>
+
+" don't use vim's relative line numbers, which break annotation
+set norelativenumber
