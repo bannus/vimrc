@@ -119,7 +119,13 @@ endif
 set background=dark
 set t_Co=256
 colorscheme smyck
-set gfn=Inconsolata:h14,Consolas:h11
+if has('win32')
+    set gfn=Consolas:h11
+elseif has('mac')
+    set gfn=Inconsolata:h14,Consolas:h11
+else
+    set gfn=DejaVu\ Sans\ Mono\ 10
+endif
 
 " keep at least 5 lines below the cursor
 set scrolloff=5
