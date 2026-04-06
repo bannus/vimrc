@@ -30,7 +30,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " plugins
 Plugin 'tomtom/checksyntax_vim'
@@ -50,7 +50,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'felixr/vim-multiedit'
 Plugin 'vim-scripts/trailing-whitespace'
 Plugin 'terryma/vim-multiple-cursors'
@@ -60,6 +61,7 @@ Plugin 'henrik/vim-indexed-search'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-markdown'
 Plugin 'PProvost/vim-ps1'
+Plugin 'udalov/kotlin-vim'
 
 call vundle#end()
 
